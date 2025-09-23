@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --first-font-style:
+    --second-font:
+    --third-font:
+}
+header{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7,5em;
+      
+}
+.titulo{
+    font-style: var(--second-font);
+    color: brown;
+    
+}
+.uno{
+    color:brown;
+    font-style: var(--first-font);
+    padding: 10px;
+}
+.dos{
+    color: brown;
+    font-style: var(--second-font);
+    padding: 10px;
+}
+.tres{
+    color: brown;
+    font-style: var(--third-font);
+    padding: 10px
+}

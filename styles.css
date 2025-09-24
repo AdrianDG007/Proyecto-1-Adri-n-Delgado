@@ -6,15 +6,15 @@
 header{
     background-color: rgb(51, 53, 70);
     display: flex;
-    align-content: end;
     height: 10.5em;
     padding: 10px;
     color: var(--Primary-color);    
 }
 .logo {
+    display: flex;
     height: 10rem;
     width: 10rem;
-    margin-right: 20px;
+    margin-top: 0.3em;   
 }
 .info{
     display: flex;
@@ -25,7 +25,7 @@ header{
 }
 .titulo{
     display:flex;
-    justify-content: space-around;
+    justify-content:center;
     font-style: var(--second-font);
     margin:0;
     padding-bottom: 0.3em;   

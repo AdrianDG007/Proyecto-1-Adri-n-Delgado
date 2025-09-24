@@ -1,35 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --first-font-style:
-    --second-font:
-    --third-font:
+    --Primary-color:rgb(207, 212, 255);
 }
 header{
-    background-color: black;
+    background-color: rgb(51, 53, 70);
     display: flex;
+    align-content: end;
+    height: 10.5em;
+    padding: 10px;
+    color: var(--Primary-color);    
+}
+.logo {
+    height: 10rem;
+    width: 10rem;
+    margin-right: 20px;
+}
+.info{
+    display: flex;
+    margin: 0 0 0.5em 0;
+    flex-direction:column;
     justify-content: center;
-    align-items: center;
-    height: 7,5em;
-      
+    flex:1;
 }
 .titulo{
+    display:flex;
+    justify-content: space-around;
     font-style: var(--second-font);
-    color: brown;
-    
+    margin:0;
+    padding-bottom: 0.3em;   
 }
-.uno{
-    color:brown;
-    font-style: var(--first-font);
-    padding: 10px;
+nav{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;    
 }
-.dos{
-    color: brown;
-    font-style: var(--second-font);
-    padding: 10px;
-}
-.tres{
-    color: brown;
-    font-style: var(--third-font);
-    padding: 10px
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }

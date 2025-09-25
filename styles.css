@@ -2,7 +2,7 @@
 
 :root {
     --Primary-color:rgb(207, 212, 255);
-    --Secondary-color:rgb(78, 174, 215);
+    --Secondary-color:rgba(3, 176, 250, 0.732);
 }
 * {
   margin: 0;
@@ -50,18 +50,28 @@ nav ul{
 }
 .hero{
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-    background-image: url(./assets/wallpaper-hero.jpg);
+    background-image: url(./assets/wallpaper-hero-1.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 1000px;
     color:var(--Secondary-color);
 }
 .frase {
-    font-size: 2rem;
-    font-weight: bold;
-
-    text-align: left;
-    max-width: 600px;
+    font-size: 6em;
+    font-weight: 900;
+    text-align: center;
+}
+.sobre-mi{
+    display: flex;
+    padding-left: 200px;
+    height: 1500px;
+}
+.yo{
+    display: flex;
+    align-self:center;
+    border-radius: 100px;
+    height: 600px;
+    width: 400px;
 }

@@ -2,7 +2,8 @@
 
 :root {
     --Primary-color:rgb(207, 212, 255);
-    --Secondary-color:rgba(3, 176, 250, 0.732);
+    --Secondary-color:rgb(52, 70, 231);
+    --Primary-background: rgb(248, 246, 233);
 }
 * {
   margin: 0;
@@ -49,13 +50,12 @@ nav ul{
     list-style: none;
 }
 .hero{
-    display: flex;
-    justify-content: center;
+    background-color: var(--Primary-background);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: start;
     align-items: center;
-    background-image: url(./assets/wallpaper-hero-1.png);
-    background-size: cover;
-    background-position: center;
-    height: 1000px;
+    height: 1250px;
     color:var(--Secondary-color);
 }
 .frase {
@@ -63,15 +63,47 @@ nav ul{
     font-weight: 900;
     text-align: center;
 }
+.hero > img{
+    display:grid;
+    height: 100%;
+    width: 50%;
+}
 .sobre-mi{
-    display: flex;
-    padding-left: 200px;
-    height: 1500px;
+    display: grid;
+    grid-template-columns: 
+        minmax(2rem, 10%) 
+        repeat(2, 0.7fr) 
+        repeat(2, 0.35fr) 
+        repeat(2, 0.7fr) 
+        minmax(2rem, 10%);
+    grid-template-rows:10% repeat(3,20%) 10%;
+    height: 1650px;
 }
 .yo{
-    display: flex;
-    align-self:center;
+    display: grid;
+    grid-row:2 / 5 ;
+    grid-column: 2 / 4;
     border-radius: 100px;
-    height: 600px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
+}
+.descripcion{
+    display: grid;
+    grid-row: 2 / 5;
+    grid-column: 6 / 8;
+}
+.name{
+    display: grid;
+    font-family: 'Playfair Display', serif;
+    font-size: 4.346em;
+    height: 69%;
+    align-items: center;   
+    color: rgb(74, 56, 103);
+ 
+}
+.sobre-mi > article > p{
+    display: grid;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(74, 56, 103);
 }

@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  position: static; /* asegúrate de que no hay posiciones absolutas innecesarias */
+}
 
 :root {
     --Primary-color:rgb(207, 212, 255);
     --Secondary-color:rgb(52, 70, 231);
+    --Terciary-color: rgb(74, 56, 103);
     --Primary-background: rgb(248, 246, 233);
 }
 * {
@@ -65,8 +69,13 @@ nav ul{
 }
 .hero > img{
     display:grid;
-    height: 100%;
-    width: 50%;
+    grid-area: 2 /0/0/ 3;
+    height: 70%;
+    width: 70%;    
+    justify-self: center;
+}
+main{
+    background-color: var(--Primary-background);
 }
 .sobre-mi{
     display: grid;
@@ -98,12 +107,19 @@ nav ul{
     font-size: 4.346em;
     height: 69%;
     align-items: center;   
-    color: rgb(74, 56, 103);
+    color: var(--Terciary-color);
  
 }
 .sobre-mi > article > p{
     display: grid;
-    text-align: justify;
+    font-size: 1.8em;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
-    color: rgb(74, 56, 103);
+    color: var(--Terciary-color);
+}
+.galeria > article > img{
+    display: grid;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
 }

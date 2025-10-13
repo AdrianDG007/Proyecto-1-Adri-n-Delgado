@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-* {
-  position: static; /* asegúrate de que no hay posiciones absolutas innecesarias */
-}
-
 :root {
     --Primary-color:rgb(207, 212, 255);
     --Secondary-color:rgb(52, 70, 231);
@@ -218,7 +214,6 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-
 }
 .img-pro-4{
     display: grid;
@@ -226,4 +221,46 @@ main{
     height: 87%;
     width: 87%;
     border-radius: 50px;
+}
+.inscripcion{
+    display: grid;
+    background-color: var(--Primary-background);
+    flex: 1;
+    grid-template-rows: 
+        minmax(2rem, 10%)
+        repeat(2, 18%) 
+        minmax(2rem, 18%);
+    grid-template-columns:
+        minmax(2rem, 25.43%) 
+        repeat(2, 20%) 
+        minmax(2rem, 30%);
+    height: 1250px;
+    gap: 1em;
+        display: grid;
+    font-size: 1.5em;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    color: var(--Terciary-color);
+}
+.inscripcion > h2{
+    display: grid;
+    grid-area: 1 / 1 / 2 / 5;
+    align-items: center;    
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--Terciary-color);
+}
+.formulario{
+    background-color: white;
+    grid-row: 2 / 4;
+    grid-column: 2 / 4;
+    border-radius: 20px;
+    padding: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.773);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    
 }

@@ -49,7 +49,16 @@ nav ul{
     padding: 0;
     list-style: none;
 }
-.hero{
+a{
+    text-decoration: none;
+    color: var(--Primary-color);
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+a:hover {
+    color: #5921bb;
+}
+#hero{
     background-color: var(--Primary-background);
     display: grid;
     grid-template-columns: 50% 50%;
@@ -63,7 +72,7 @@ nav ul{
     font-weight: 900;
     text-align: center;
 }
-.hero > img{
+#hero > img{
     display:grid;
     grid-area: 2 /0/0/ 3;
     height: 70%;
@@ -73,7 +82,7 @@ nav ul{
 main{
     background-color: var(--Primary-background);
 }
-.sobre-mi{
+#sobre-mi{
     display: grid;
     grid-template-columns: 
         minmax(2rem, 10%) 
@@ -104,7 +113,6 @@ main{
     height: 69%;
     align-items: center;   
     color: var(--Terciary-color);
- 
 }
 .sobre-mi > article > p{
     display: grid;
@@ -113,7 +121,7 @@ main{
     font-family: 'Roboto', sans-serif;
     color: var(--Terciary-color);
 }
-.proyectos{
+#proyectos{
     display: grid;
     background-color: var(--Primary-background);
     grid-template-rows: 
@@ -127,7 +135,7 @@ main{
     height: 1600px;
     gap: 1em;
 }
-.proyectos > h2{
+#proyectos > h2{
     display: grid;
     grid-area: 1 / 2 / 2 / 6;
     align-items: center;    
@@ -135,17 +143,16 @@ main{
     font-size: 4rem;
     color: var(--Terciary-color);
 }
-.proyectos > article > p{
+#proyectos > article > p{
     font-size: 0.7em;
     font-family: 'Roboto', sans-serif;
     color: var(--Terciary-color);
     text-align: center;
 }
-.proyectos > article > h3{
+#proyectos > article > h3{
     font-size: 1.25em;
     font-family: 'Playfair Display', serif;
     color: var(--Terciary-color);
-
 }
 .proyecto-1 {
   grid-row: 2 / 4;
@@ -158,7 +165,8 @@ main{
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-}.img-pro-1{
+}
+.img-pro-1{
     display: grid;
     object-fit:fill;
     height: 87%;
@@ -222,7 +230,7 @@ main{
     width: 87%;
     border-radius: 50px;
 }
-.inscripcion{
+#inscripcion{
     display: grid;
     background-color: var(--Primary-background);
     flex: 1;
@@ -242,7 +250,7 @@ main{
     font-family: 'Playfair Display', serif;
     color: var(--Terciary-color);
 }
-.inscripcion > h2{
+#inscripcion > h2{
     display: grid;
     grid-area: 1 / 1 / 2 / 5;
     align-items: center;    
@@ -262,5 +270,17 @@ main{
     align-items: center;
     justify-content: center;
     gap: 1em;
-    
+}
+button{
+    background-color: var(--Terciary-color);
+    color: var(--Primary-color);
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:hover {
+  background-color: #5921bb;
 }

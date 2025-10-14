@@ -284,3 +284,10 @@ button{
 button:hover {
   background-color: #5921bb;
 }
+footer{
+    background-color: rgb(51, 53, 70);
+    color: var(--Primary-color);
+    text-align: center;
+    padding: 2em;
+    font-family: 'Roboto', sans-serif;
+}

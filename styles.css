@@ -291,122 +291,99 @@ footer{
     padding: 2em;
     font-family: 'Roboto', sans-serif;
 }
-/* 🌐 Tablets (pantallas medianas) */
 @media (max-width: 1024px) {
   header {
     flex-direction: column;
     height: auto;
     text-align: center;
   }
-
   nav ul {
     flex-wrap: wrap;
     gap: 0.5em;
   }
-
   #hero {
     flex-direction: column;
     text-align: center;
   }
-
   .frase {
     font-size: 3em;
   }
-
   #sobre-mi {
     grid-template-columns: 1fr;
     height: auto;
     padding: 2em;
   }
-
   .yo {
     width: 80%;
     height: auto;
     justify-self: center;
   }
-
   .descripcion {
     grid-column: 1 / -1;
     text-align: center;
   }
-
   #proyectos {
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
     height: auto;
     padding: 2em;
   }
-
   #inscripcion {
     grid-template-columns: 1fr;
     height: auto;
     padding: 2em;
   }
-
   .formulario {
     width: 100%;
   }
 }
-
-
 @media (max-width: 600px) {
   header {
     flex-direction: column;
     align-items: center;
   }
-
   .logo {
     height: 7rem;
     width: 7rem;
   }
-
   a {
     font-size: 1.1em;
   }
-
   .frase {
     font-size: 2.2em;
   }
-
   #hero img {
     max-width: 90%;
   }
-
   .name {
     font-size: 2.5em;
   }
-
   #proyectos > h2,
   #inscripcion > h2 {
     font-size: 2em;
   }
-
   footer {
     font-size: 0.9em;
   }
 }
-/* Ajustes para que el título no colapse en móvil */
 @media (max-width: 768px) {
   #inscripcion {
-    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     height: auto;
     padding: 2em 1em;
   }
-
   #inscripcion > h2 {
-    font-size: 2rem;         /* Título más pequeño */
-    text-align: center;      /* Centrado */
-    word-wrap: break-word;   /* Si es muy largo, se parte en otra línea */
+    font-size: 2rem;         
+    text-align: center;      
+    word-wrap: break-word;   
     margin-bottom: 1em;
   }
-
   .formulario {
-    grid-column: 1 / -1;     /* Que ocupe todo el ancho */
+    grid-column: 1 / -1;     
     width: 100%;
     padding: 1.5em;
   }
-
   .formulario label,
   .formulario input,
   .formulario button {

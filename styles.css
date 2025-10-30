@@ -75,9 +75,12 @@ a:hover {
 #hero > img{
     display:grid;
     grid-area: 2 /0/0/ 3;
-    height: 70%;
-    width: 70%;    
+    height:auto;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
     justify-self: center;
+    object-fit: contain;
 }
 main{
     background-color: var(--Primary-background);
